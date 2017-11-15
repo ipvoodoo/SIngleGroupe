@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+
+  android:background="@color/colorDefaultWhite">
+
+  <RelativeLayout
+    android:id="@+id/opened_forwarded_post_header"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"/>
+
+
+  <android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view_rep"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="4dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_gravity="center"
+    card_view:cardCornerRadius="0dp">
+
+    <RelativeLayout
+      xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="16dp">
+
+      <RelativeLayout
+        android:id="@+id/rv_repost_sender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+          android:id="@+id/civ_repost_profile_image"
+          android:layout_width="40dp"
+          android:layout_height="40dp"
+
+          android:src="@color/colorAccent"/>
+
+        <RelativeLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="16dp"
+          android:layout_centerVertical="true"
+          android:layout_toRightOf="@+id/civ_repost_profile_image">
+
+          <TextView
+            android:id="@+id/tv_repost_profile_name"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:singleLine="true"
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp"
+            tools:text="First name and Last name"/>
+
+          <TextView
+            android:id="@+id/tv_repost_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_repost_profile_name"
+            android:textSize="14sp"
+            tools:text="11.03.2016"/>
+
+        </RelativeLayout>
+
+      </RelativeLayout>
+
+
+      <TextView
+        android:id="@+id/tv_repost_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_below="@+id/rv_repost_sender"
+        android:autoLink="web"
+        android:textColor="@android:color/primary_text_light"
+        android:textSize="15sp"
+        tools:text="Text string, this is for text. Enough for text?..."/>
+
+
+    </RelativeLayout>
+
+  </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

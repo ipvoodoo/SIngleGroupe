@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/opened_post_header"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content">
+
+  <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+      android:id="@+id/rv_sender"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="16dp"
+      android:layout_marginBottom="16dp"
+      android:layout_marginLeft="16dp"
+      android:layout_marginRight="16dp">
+
+      <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/civ_profile_image"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+
+        android:src="@color/colorAccent"/>
+
+      <TextView
+        android:id="@+id/tv_profile_name"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/civ_profile_image"
+        android:lines="1"
+        android:singleLine="true"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp"
+        tools:text="First name and Last name"/>
+
+    </RelativeLayout>
+
+
+    <TextView
+      android:id="@+id/tv_text"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="16dp"
+      android:layout_marginLeft="16dp"
+      android:layout_marginRight="16dp"
+      android:layout_below="@+id/rv_sender"
+      android:autoLink="web"
+      android:textColor="@android:color/primary_text_light"
+      android:textSize="15sp"
+      tools:text="Text string, this is for text. Enough for text?..."/>
+
+  </RelativeLayout>
+
+
+</RelativeLayout>

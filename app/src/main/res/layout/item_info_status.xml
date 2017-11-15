@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:background="@color/colorDefaultWhite"
+  xmlns:tools="http://schemas.android.com/tools">
+
+  <android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cv_top"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    card_view:cardCornerRadius="0dp">
+
+    <RelativeLayout
+      android:id="@+id/rv_top"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+      <RelativeLayout
+        android:id="@+id/rv_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:background="?android:attr/selectableItemBackground">
+
+
+        <TextView
+          android:id="@+id/tv_status"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentLeft="true"
+          android:lines="1"
+          android:text="Статус"
+          android:textSize="14sp" />
+
+        <TextView
+          android:id="@+id/tv_status_text"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentLeft="true"
+          android:layout_below="@+id/tv_status"
+          android:layout_marginTop="4dp"
+          android:autoLink="web"
+          tools:text="Группа взаимопомощи для начинающих ANDROID разработчиков и программистов: освоим андроид вместе!"
+          android:textColor="@android:color/primary_text_light"
+          android:textSize="16sp" />
+
+      </RelativeLayout>
+
+
+      <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/rv_status"
+        android:background="@color/colorDivider" />
+
+
+      <RelativeLayout
+        android:id="@+id/rv_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rv_status"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:background="?android:attr/selectableItemBackground">
+
+
+        <TextView
+          android:id="@+id/tv_description"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentLeft="true"
+          android:lines="1"
+          android:text="Описание"
+          android:textSize="14sp" />
+
+        <TextView
+          android:id="@+id/tv_description_text"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentLeft="true"
+          android:layout_below="@+id/tv_description"
+          android:layout_marginTop="4dp"
+          android:autoLink="web"
+          tools:text="Присоединяйся к официальной группе сайта www.fandroid.info - помощь начинающим разработчикам приложений и игр для андроид, обучение разработке и программированию android приложений и игр"
+          android:textColor="@android:color/primary_text_light"
+          android:textSize="16sp" />
+
+
+      </RelativeLayout>
+
+      <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/rv_description"
+        android:background="@color/colorDivider" />
+
+      <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rv_description"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp">
+
+
+        <TextView
+          android:id="@+id/tv_site"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentLeft="true"
+          android:lines="1"
+          android:text="Веб-сайт"
+          android:textSize="14sp" />
+
+        <TextView
+          android:id="@+id/tv_site_text"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentLeft="true"
+          android:layout_below="@+id/tv_site"
+          android:layout_marginTop="4dp"
+          android:autoLink="web"
+          tools:text="http://www.fandroid.info/"
+          android:textColor="@android:color/primary_text_light"
+          android:textSize="16sp" />
+
+
+      </RelativeLayout>
+    </RelativeLayout>
+
+  </android.support.v7.widget.CardView>
+
+</RelativeLayout>

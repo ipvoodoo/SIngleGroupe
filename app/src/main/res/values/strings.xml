@@ -1,3 +1,47 @@
 <resources>
   <string name="app_name">SingleGroupe</string>
+
+  <integer name="com_vk_sdk_AppId">6260659</integer>
+
+  <string name="hello_blank_fragment">Hello blank fragment</string>
+
+  <string name="screen_name_news">Новости</string>
+
+  <string name="font_heart">&#xE87D;</string>
+  <string name="font_comment">&#xE0B9;</string>
+  <string name="font_repost">&#xE050;</string>
+
+  <!--Drawer-->
+  <string name="screen_name_my_posts">Мои посты</string>
+  <string name="screen_name_settings">Настройки</string>
+  <string name="screen_name_members">Участники</string>
+  <string name="screen_name_topics">Темы</string>
+  <string name="screen_name_info">Информация</string>
+  <string name="screen_name_rules">Правила группы</string>
+
+  <string name="screen_name_image">Image</string>
+  <string name="screen_name_opened_post">Post</string>
+
+  <string name="screen_name_comments">Комментарии</string>
+  <string name="screen_name_opened_comment">Комментарий</string>
+
+  <string name="new_message_title">Новая запись</string>
+  <string name="add_message_text">Добавьте текст сообщения</string>
+  <string name="message_not_published">Запись не опубликована. Возможно, у вас нет прав для публикации на стене группы.</string>
+  <string name="loading_competed">Загружено</string>
+  <string name="loading_failed">Ошибка загрузки. Убедитесь в том, что имя файла не содержит пробелы и кирилицу.</string>
+
+  <string name="message">Message</string>
+  <string name="vk_group_default_name">EchoDCVk</string>
+
+  <string name="pref_push_notifications">Получать push-уведомления</string>
+
+  <string name="pref_push_notification_admin">От администратора</string>
+  <string name="pref_push_notification_members">От участников</string>
+  <string name="pref_push_notification_comment_replies">Ответы мне</string>
+  <string name="need_login">Для работы приложения небходимо авторизоваться!</string>
+  <string name="group_rules">http://www.fandroid.info/gruppa-vzaimopomoshhi-dlya-nachinayushhih-android-razrabotchikov-i-programmistov-osvoim-android-vmeste/</string>
+
+  <string name="title_links">Ссылки</string>
+  <string name="title_contacts">Контакты</string>
 </resources>

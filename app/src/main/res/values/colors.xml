@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+  <!--используется для Тулбара-->
   <color name="colorPrimary">#3F51B5</color>
+  <!--используется для Статусбара-->
   <color name="colorPrimaryDark">#303F9F</color>
+  <!--используется для плавающей кнопки и других акцентов-->
   <color name="colorAccent">#FF4081</color>
+  <!--используется для иконок-->
+  <color name="colorIcon">#a1a6a9</color>
+  <color name="colorIconDis">#c4cbd1</color>
+  <!--цвет разделителя-->
+  <color name="colorDivider">#1f000000</color>
+  <color name="colorDefaultWhite">#f5f5f5</color>
+
+  <color name="colorDrawerBackground">#3C3C3C</color>
+  <color name="colorDrawerTextLogout">#E84B3C</color>
 </resources>

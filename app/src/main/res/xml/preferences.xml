@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <PreferenceCategory android:title="@string/pref_push_notifications">
+    <SwitchPreference
+      android:defaultValue="true"
+      android:key="pref_push_notification_admin"
+      android:title="@string/pref_push_notification_admin" />
+
+    <SwitchPreference
+      android:defaultValue="false"
+      android:key="pref_push_notification_members"
+      android:title="@string/pref_push_notification_members" />
+
+
+  </PreferenceCategory>
+  <SwitchPreference
+    android:defaultValue="true"
+    android:key="pref_push_notification_comment_replies"
+    android:title="@string/pref_push_notification_comment_replies" />
+
+
+</PreferenceScreen>
