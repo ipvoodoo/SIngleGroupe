@@ -6,17 +6,17 @@
   <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 
-
   <application
     android:allowBackup="true"
     android:icon="@mipmap/ic_launcher"
     android:label="@string/app_name"
     android:roundIcon="@mipmap/ic_launcher"
     android:supportsRtl="true"
-    android:theme="@style/AppTheme">
+    android:theme="@style/AppTheme"
+    android:name=".MyApplication">
     <activity
       android:configChanges="orientation|keyboardHidden|screenSize"
-      android:name="ru.echodc.singlegroupe.ui.activity.MainActivity">
+      android:name=".ui.activity.MainActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN"/>
 
@@ -24,31 +24,32 @@
       </intent-filter>
     </activity>
     <activity
-      android:name="ru.echodc.singlegroupe.ui.activity.CreatePostActivity"
-      android:configChanges="orientation|keyboardHidden|screenSize"/>
+      android:configChanges="orientation|keyboardHidden|screenSize"
+      android:name=".ui.activity.CreatePostActivity"/>
 
     <!--VK-->
     <activity
-      android:name="com.vk.sdk.VKServiceActivity"
       android:label="ServiceActivity"
-      android:theme="@style/VK.Transparent" />
+      android:name="com.vk.sdk.VKServiceActivity"
+      android:theme="@style/VK.Transparent"/>
+
     <service android:name="ru.echodc.singlegroupe.fcm.MyFirebaseInstanceIdService">
       <intent-filter>
-        <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+        <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
       </intent-filter>
     </service>
     <service android:name="ru.echodc.singlegroupe.fcm.MyFirebaseMessagingService">
       <intent-filter>
-        <action android:name="com.google.firebase.MESSAGING_EVENT" />
+        <action android:name="com.google.firebase.MESSAGING_EVENT"/>
       </intent-filter>
     </service>
 
     <activity
-      android:name="ru.echodc.singlegroupe.ui.activity.SettingActivity"
-      android:configChanges="orientation|keyboardHidden|screenSize" />
+      android:configChanges="orientation|keyboardHidden|screenSize"
+      android:name="ru.echodc.singlegroupe.ui.activity.SettingActivity"/>
     <activity
-      android:name="ru.echodc.singlegroupe.ui.activity.OpenedPostFromPushActivity"
-      android:configChanges="orientation|keyboardHidden|screenSize"/>
+      android:configChanges="orientation|keyboardHidden|screenSize"
+      android:name="ru.echodc.singlegroupe.ui.activity.OpenedPostFromPushActivity"/>
   </application>
 
 </manifest>

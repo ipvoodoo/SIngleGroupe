@@ -17,7 +17,7 @@
   <string name="screen_name_members">Участники</string>
   <string name="screen_name_topics">Темы</string>
   <string name="screen_name_info">Информация</string>
-  <string name="screen_name_rules">Правила группы</string>
+  <string name="screen_name_project_on_github">Страница проекта</string>
 
   <string name="screen_name_image">Image</string>
   <string name="screen_name_opened_post">Post</string>
@@ -40,7 +40,7 @@
   <string name="pref_push_notification_members">От участников</string>
   <string name="pref_push_notification_comment_replies">Ответы мне</string>
   <string name="need_login">Для работы приложения небходимо авторизоваться!</string>
-  <string name="group_rules">http://www.fandroid.info/gruppa-vzaimopomoshhi-dlya-nachinayushhih-android-razrabotchikov-i-programmistov-osvoim-android-vmeste/</string>
+  <string name="group_rules">https://github.com/ipvoodoo/SIngleGroupe/</string>
 
   <string name="title_links">Ссылки</string>
   <string name="title_contacts">Контакты</string>

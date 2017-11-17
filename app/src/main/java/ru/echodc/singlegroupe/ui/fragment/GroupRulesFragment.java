@@ -14,7 +14,7 @@ public class GroupRulesFragment extends BaseFragment {
   @BindView(R.id.webview)
   WebView mWebView;
 
-  @BindString(R.string.screen_name_rules)
+  @BindString(R.string.screen_name_project_on_github)
   String mTitle;
 
 
@@ -30,7 +30,7 @@ public class GroupRulesFragment extends BaseFragment {
 
   @Override
   public int onCreateToolbarTitle() {
-    return R.string.screen_name_rules;
+    return R.string.screen_name_project_on_github;
   }
 
   @Override

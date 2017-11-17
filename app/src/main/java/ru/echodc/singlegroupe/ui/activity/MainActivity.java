@@ -96,7 +96,7 @@ public class MainActivity extends BaseActivity implements MainView {
         .withTextColorRes(R.color.vk_white)
         .withIconColorRes(R.color.colorIcon);
     PrimaryDrawerItem item7 = new PrimaryDrawerItem()
-        .withIdentifier(7).withName(R.string.screen_name_rules)
+        .withIdentifier(7).withName(R.string.screen_name_project_on_github)
         .withIcon(GoogleMaterial.Icon.gmd_assignment)
         .withTextColorRes(R.color.vk_white)
         .withIconColorRes(R.color.colorIcon);

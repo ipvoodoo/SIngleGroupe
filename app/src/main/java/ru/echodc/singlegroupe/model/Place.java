@@ -8,7 +8,6 @@ import java.util.Map;
 import ru.echodc.singlegroupe.common.utils.Utils;
 
 public class Place extends RealmObject {
-
   public static final String PLACE = "place";
   public static final String OWNER_ID = "owner_id";
   public static final String POST_ID = "post_id";
@@ -35,12 +34,8 @@ public class Place extends RealmObject {
 
   @Override
   public boolean equals(Object o) {
-    if (o == this) {
-      return true;
-    }
-    if (!(o instanceof Place)) {
-      return false;
-    }
+    if (o == this) return true;
+    if (!(o instanceof Place)) return false;
     Place other = (Place) o;
     return other.ownerId.equals(ownerId)
         && other.postId.equals(postId);

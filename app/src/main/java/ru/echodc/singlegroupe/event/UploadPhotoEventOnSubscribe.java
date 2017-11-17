@@ -31,7 +31,7 @@ public class UploadPhotoEventOnSubscribe implements ObservableOnSubscribe<VKApiP
 
   @Override
   public void subscribe(@NonNull final ObservableEmitter<VKApiPhoto> e) throws Exception {
-    Options options = new Options();
+    BitmapFactory.Options options = new Options();
     options.inPreferredConfig = Config.ARGB_8888;
     Bitmap bitmap = BitmapFactory.decodeFile(mPhoto, options);
 
